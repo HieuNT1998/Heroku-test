@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.listen(1998,(err)=>{
+app.listen(process.env.PORT || 1998,(err)=>{
     if(err) console.log(err);
     else console.log("thanh cong");
 });
